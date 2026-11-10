@@ -1,6 +1,8 @@
 name: uat-deploy-1794303831
 on:
   workflow_dispatch:
+  push:
+    branches: ['uat-jb-*']
 jobs:
   deploy:
     runs-on: ubuntu-latest
