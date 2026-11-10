@@ -1,0 +1,9 @@
+name: uat-fail-1794303831
+on:
+  push:
+    branches: ['uat-jb-*']
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
