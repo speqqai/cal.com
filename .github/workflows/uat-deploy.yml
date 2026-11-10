@@ -1,0 +1,9 @@
+name: uat-deploy-1794303831
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: uat-env-1794303831
+    steps:
+      - run: echo deployed
